@@ -6,7 +6,14 @@
   "engines": {
     "vscode": "^1.85.0"
   },
+  "icon": "icon.png",
   "categories": ["Other"],
+  "publisher": "hoojiNT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoojiNT/tidy"
+  },
+  "license": "MIT",
   "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
