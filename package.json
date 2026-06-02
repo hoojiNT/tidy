@@ -2,7 +2,7 @@
   "name": "tidy",
   "displayName": "Tidy",
   "description": "Hide AI agent folders from the VS Code Explorer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -22,7 +22,20 @@
         "command": "tidy.toggleAgentFolders",
         "title": "Tidy: Toggle Agent Folders"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Tidy",
+      "properties": {
+        "tidy.additionalFolders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Additional folders to hide (e.g., [\"kilo\", \".myagent\"])"
+        }
+      }
+    }
   },
   "scripts": {
     "compile": "tsc -p ./",
